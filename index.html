@@ -1,0 +1,635 @@
+
+  <!DOCTYPE html>
+  <html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ethiek: Moreel Kompas - Een reflectie op persoonlijkheid, waarden en ethisch handelen door Sam Pittois">
+    <title>Ethiek: Moreel Kompas - Sam Pittois</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="main-nav">
+      <div class="nav-container">
+        <button onclick="scrollToSection('intro')" class="nav-logo">
+          Moreel Kompas
+        </button>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-desktop">
+          <button onclick="scrollToSection('intro')" data-section="intro">Inleiding</button>
+          <button onclick="scrollToSection('personality')" data-section="personality">Persoonlijkheid</button>
+          <button onclick="scrollToSection('career')" data-section="career">Carrière</button>
+          <button onclick="scrollToSection('worldview')" data-section="worldview">Wereldbeeld</button>
+          <button onclick="scrollToSection('bateson')" data-section="bateson">Bateson Model</button>
+          <button onclick="scrollToSection('moral-code')" data-section="moral-code">Moral Code</button>
+          <button onclick="scrollToSection('swot')" data-section="swot">SWOT</button>
+          <button onclick="scrollToSection('future')" data-section="future">Toekomst</button>
+          <button onclick="scrollToSection('conclusion')" data-section="conclusion">Conclusie</button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg id="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-nav" class="nav-mobile">
+        <button onclick="scrollToSection('intro')" data-section="intro">Inleiding</button>
+        <button onclick="scrollToSection('personality')" data-section="personality">Persoonlijkheid</button>
+        <button onclick="scrollToSection('career')" data-section="career">Carrière</button>
+        <button onclick="scrollToSection('worldview')" data-section="worldview">Wereldbeeld</button>
+        <button onclick="scrollToSection('bateson')" data-section="bateson">Bateson Model</button>
+        <button onclick="scrollToSection('moral-code')" data-section="moral-code">Moral Code</button>
+        <button onclick="scrollToSection('swot')" data-section="swot">SWOT</button>
+        <button onclick="scrollToSection('future')" data-section="future">Toekomst</button>
+        <button onclick="scrollToSection('conclusion')" data-section="conclusion">Conclusie</button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="intro" class="section hero-section">
+        <div class="container text-center">
+          <div class="icon-circle">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+          </div>
+                
+          <h1>Ethiek: Moreel Kompas</h1>
+          <p class="subtitle">Sam Pittois</p>
+
+          <div class="content-block">
+            <p>
+              Mijn naam is Sam Pittois. Ik ben twintig jaar en studeer Digital Experience Design 
+              aan Thomas More. Ik ben sterk introvert, wat betekent dat mijn wereld zich vaak meer 
+              vanbinnen afspeelt dan naar buiten toe. In mijn hoofd is het zelden stil: gedachten, 
+              twijfels, ideeën en morele vragen lopen voortdurend door elkaar.
+            </p>
+                    
+            <p>
+              Ironisch genoeg is tijd vaak mijn grootste tekort. Niet omdat ik niets doe, maar omdat 
+              er te veel tegelijk gebeurt in mijn denken. Deze innerlijke druk dwingt me om bewuster 
+              te worden van wie ik ben, hoe ik handel en welke waarden mij sturen, zowel als mens 
+              als toekomstige professional.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personality Section -->
+      <section id="personality" class="section bg-light">
+        <div class="container-wide">
+          <div class="section-header">
+            <h2>Mijn Persoonlijkheid</h2>
+            <p class="section-subtitle">
+              Als INFP (Mediator) beschik ik over een rijke innerlijke wereld vol verbeelding, 
+              empathie en idealisme.
+            </p>
+          </div>
+
+          <!-- INFP Stats -->
+          <div class="infp-stats">
+            <h3>INFP-T Profiel</h3>
+            <div class="stat-item">
+              <div class="stat-header">
+                <span>Introvert</span>
+                <span class="stat-value">78%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 78%"></div>
+              </div>
+            </div>
+                    
+            <div class="stat-item">
+              <div class="stat-header">
+                <span>Intuïtief</span>
+                <span class="stat-value">60%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+                    
+            <div class="stat-item">
+              <div class="stat-header">
+                <span>Feeling</span>
+                <span class="stat-value">69%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 69%"></div>
+              </div>
+            </div>
+                    
+            <div class="stat-item">
+              <div class="stat-header">
+                <span>Prospecting</span>
+                <span class="stat-value">63%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 63%"></div>
+              </div>
+            </div>
+                    
+            <div class="stat-item">
+              <div class="stat-header">
+                <span>Turbulent</span>
+                <span class="stat-value">83%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 83%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traits Grid -->
+          <div class="traits-grid">
+            <div class="trait-card">
+              <div class="trait-icon">❤️</div>
+              <h4>Empathie</h4>
+              <p>Diep empathisch vermogen om me op een intense en intuïtieve manier met anderen te verbinden.</p>
+            </div>
+                    
+            <div class="trait-card">
+              <div class="trait-icon">✨</div>
+              <h4>Creativiteit</h4>
+              <p>Een onuitputtelijke bron van inspiratie met unieke ideeën en innovatieve oplossingen.</p>
+            </div>
+                    
+            <div class="trait-card">
+              <div class="trait-icon">👥</div>
+              <h4>Zorgzaamheid</h4>
+              <p>Van nature een vertrouwenspersoon en een bron van steun voor mensen om mij heen.</p>
+            </div>
+                    
+            <div class="trait-card">
+              <div class="trait-icon">💡</div>
+              <h4>Introspectie</h4>
+              <p>Voortdurend onderzoek van mijn eigen gedachten, gevoelens en waarden.</p>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <p>
+              Mijn creativiteit is een onuitputtelijke bron van inspiratie en komt vaak tot uiting in 
+              unieke ideeën en innovatieve oplossingen voor complexe problemen. Tegelijk kan diezelfde 
+              creativiteit ervoor zorgen dat ik soms verlies raak in dagdromen, waardoor het een uitdaging 
+              kan zijn om de meer praktische aspecten van het leven aan te pakken.
+            </p>
+                    
+            <p>
+              Mijn introspectieve aard zorgt ervoor dat ik voortdurend mijn eigen gedachten, gevoelens 
+              en waarden onderzoek. Deze zelfkennis is een krachtig hulpmiddel voor persoonlijke groei, 
+              maar ze kan me ook doen doorslaan in overmatige zelfkritiek.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Career Section -->
+      <section id="career" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>My Career Path</h2>
+            <p class="section-subtitle">
+              Gedreven door betekenis en zingeving in alles wat ik doe
+            </p>
+          </div>
+
+          <div class="card-highlight mb-4">
+            <div>
+              <h3>💼 Digital Experience Design</h3>
+              <p>
+                In mijn professionele leven word ik gedreven door een diepgewortelde behoefte aan 
+                betekenis en zingeving. Ik floreer in omgevingen die me de ruimte geven om mijn 
+                creativiteit te uiten, anderen te helpen en trouw te blijven aan mijn waarden.
+              </p>
+            </div>
+          </div>
+
+          <div class="two-col-grid">
+            <div class="card">
+              <h4>👥 Samenwerking</h4>
+              <p>
+                Het is voor mij belangrijk dat ik mezelf kan zijn en goed overeenkom met collega's. 
+                Ik wil momenten om zelfstandig te werken, maar die moeten ook niet te lang duren. 
+                Een babbel met een collega kan inspirerend zijn.
+              </p>
+            </div>
+
+            <div class="card">
+              <h4>💡 Out-of-the-box denken</h4>
+              <p>
+                Mijn vermogen om out-of-the-box te denken en me in te leven in anderen maakt mij 
+                een waardevolle kracht, vooral in functies waar innovatieve probleemoplossing en 
+                sterke interpersoonlijke vaardigheden belangrijk zijn.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-amber">
+            <div>
+              <h3>✍️ Schrijven als Passie</h3>
+              <p>
+                Verder ben ik ook een grote fan van schrijven. Verhalen waar ik mijn fantasie in 
+                kan loslaten. Een wereld waar alles kan en alles mag. Dit is goed als hobby. Het 
+                kan mijn liefde voor schrijven enorm beïnvloeden als ik hier ooit mijn job van maak.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Worldview Section -->
+      <section id="worldview" class="section bg-light">
+        <div class="container">
+          <div class="section-header">
+            <h2>Wereld- en Mensbeeld</h2>
+            <p class="section-subtitle">
+              Hoe ik de wereld ervaar en wat ik geloof over mensen
+            </p>
+          </div>
+
+          <div class="card mb-4">
+            <h3>🌍 Wereldbeeld</h3>
+            <p>
+              Mijn wereldbeeld wordt sterk gekleurd door hoe ik de hedendaagse maatschappij 
+              ervaar: snel, veeleisend en vaak luid. De wereld waarin we leven verwacht constante 
+              productiviteit, zichtbaarheid en efficiëntie.
+            </p>
+            <p>
+              Dit botst met mijn behoefte aan traagheid, nuance en diepgang. Ik ervaar de wereld 
+              niet als zwart-wit, maar als complex en gelaagd, waarin keuzes zelden volledig juist 
+              of fout zijn.
+            </p>
+          </div>
+
+          <div class="two-col-grid">
+            <div class="card-emerald">
+              <h4>👥 Mensbeeld</h4>
+              <p>
+                Mijn mensbeeld is in essentie zacht en hoopvol. Ik geloof dat mensen van nature 
+                verlangen naar verbinding, begrip en erkenning. Tegelijk besef ik dat mensen 
+                kwetsbaar en beïnvloedbaar zijn, zeker binnen digitale contexten.
+              </p>
+            </div>
+
+            <div class="card-amber">
+              <h4>❤️ Verantwoordelijkheid</h4>
+              <p>
+                Als ontwerper wil ik mensen niet manipuleren, maar ondersteunen. Niet sturen vanuit 
+                winst, maar begeleiden vanuit respect. Juist daarom vind ik het belangrijk om 
+                zorgvuldig om te gaan met macht en invloed.
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <h3>✨ Zingeving</h3>
+            <p>
+              Wat betreft een godsbeeld ben ik niet religieus in de traditionele zin. Ik geloof 
+              niet in een persoonlijke god, maar wel in een groter geheel van verbondenheid en 
+              verantwoordelijkheid. Voor mij ligt zingeving in het besef dat mijn handelen, hoe 
+              klein ook, invloed heeft op anderen. Dat idee vormt de basis van mijn ethisch bewustzijn.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bateson Section -->
+      <section id="bateson" class="section">
+        <div class="container-wide">
+          <div class="section-header">
+            <h2>Het Model van Bateson</h2>
+            <p class="section-subtitle">
+              Dit model helpt mij om mijn moreel en ethisch handelen niet enkel te bekijken vanuit 
+              wat ik doe, maar vooral vanuit waarom ik dat doe. Het maakt zichtbaar hoe mijn gedrag 
+              voortkomt uit diepere lagen zoals overtuigingen, identiteit en zingeving.
+            </p>
+          </div>
+
+          <!-- Bateson Circle Visualization -->
+          <div class="bateson-container">
+            <div class="bateson-visual">
+              <svg width="700" height="700" viewBox="0 0 700 700" id="bateson-svg">
+                <!-- Circles will be drawn by JavaScript -->
+              </svg>
+            </div>
+
+            <div class="bateson-info">
+              <div id="bateson-info-content">
+                <div class="bateson-welcome">
+                  <h3>Ontdek de lagen</h3>
+                  <p>
+                    Dit model toont hoe ethisch handelen voortkomt uit verschillende lagen, 
+                    van zichtbaar gedrag aan de buitenkant naar zingeving in het centrum.
+                  </p>
+                                
+                  <div class="level-buttons">
+                    <button onclick="selectBatesonLevel(1)" class="level-btn">
+                      <span class="level-emoji">🤲</span>
+                      <div>
+                        <div class="level-title">Gedrag</div>
+                        <div class="level-sub">Wat ik concreet doe</div>
+                      </div>
+                      <span class="level-num">Niveau 1</span>
+                    </button>
+                                    
+                    <button onclick="selectBatesonLevel(2)" class="level-btn">
+                      <span class="level-emoji">💡</span>
+                      <div>
+                        <div class="level-title">Vaardigheden</div>
+                        <div class="level-sub">Wat ik kan en hoe ik dat inzet</div>
+                      </div>
+                      <span class="level-num">Niveau 2</span>
+                    </button>
+                                    
+                    <button onclick="selectBatesonLevel(3)" class="level-btn">
+                      <span class="level-emoji">❤️</span>
+                      <div>
+                        <div class="level-title">Overtuigingen</div>
+                        <div class="level-sub">Wat ik geloof dat juist is</div>
+                      </div>
+                      <span class="level-num">Niveau 3</span>
+                    </button>
+                                    
+                    <button onclick="selectBatesonLevel(4)" class="level-btn">
+                      <span class="level-emoji">👤</span>
+                      <div>
+                        <div class="level-title">Identiteit</div>
+                        <div class="level-sub">Wie ik ben</div>
+                      </div>
+                      <span class="level-num">Niveau 4</span>
+                    </button>
+                                    
+                    <button onclick="selectBatesonLevel(5)" class="level-btn">
+                      <span class="level-emoji">🧭</span>
+                      <div>
+                        <div class="level-title">Zingeving</div>
+                        <div class="level-sub">Waarom ik besta en handel</div>
+                      </div>
+                      <span class="level-num">Niveau 5</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-highlight mt-6">
+            <h3>Waarom dit model bij mij past</h3>
+            <p class="text-center">
+              Het model van Bateson past sterk bij mijn persoonlijkheid, omdat het erkent dat ethisch 
+              handelen gelaagd en complex is. Het bevestigt dat mijn gevoeligheid, introspectie en 
+              idealisme geen zwaktes zijn, maar richtingaanwijzers. Tegelijk daagt het model mij uit 
+              om mijn innerlijke waarden te vertalen naar concreet, moedig gedrag in de buitenwereld.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Moral Code Section -->
+      <section id="moral-code" class="section bg-light">
+        <div class="container-wide">
+          <div class="section-header">
+            <h2>Moral Code of Honor</h2>
+            <p class="section-subtitle">
+              Mijn moreel kompas bestaat niet uit vaste regels, maar uit waarden die richting geven 
+              aan mijn keuzes
+            </p>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon emerald">🛡️</div>
+              <h4>Authenticiteit</h4>
+              <p>Handelen op een manier die trouw blijft aan wie ik ben en wat ik geloof.</p>
+            </div>
+                    
+            <div class="value-card">
+              <div class="value-icon rose">❤️</div>
+              <h4>Empathie</h4>
+              <p>Rekening houden met de gevoelens, noden en grenzen van anderen.</p>
+            </div>
+                    
+            <div class="value-card">
+              <div class="value-icon amber">👁️</div>
+              <h4>Integriteit</h4>
+              <p>Eerlijkheid, transparantie en oprechtheid, ook wanneer dat moeilijk is.</p>
+            </div>
+                    
+            <div class="value-card">
+              <div class="value-icon purple">✨</div>
+              <h4>Betekenis</h4>
+              <p>Het gevoel dat wat ik doe ertoe doet, al is de impact klein.</p>
+            </div>
+                    
+            <div class="value-card">
+              <div class="value-icon blue">⏰</div>
+              <h4>Zorgvuldigheid</h4>
+              <p>De tijd nemen om na te denken voordat ik handel.</p>
+            </div>
+          </div>
+
+          <div class="card-highlight mt-6">
+            <p class="text-center">
+              Wanneer deze waarden met elkaar botsen – bijvoorbeeld empathie tegenover eerlijkheid – 
+              probeer ik bewust stil te staan bij wat op lange termijn het meest respectvol is, zowel 
+              voor mezelf als voor anderen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SWOT Section -->
+      <section id="swot" class="section">
+        <div class="container-wide">
+          <div class="section-header">
+            <h2>SWOT-analyse</h2>
+            <p class="section-subtitle">
+              Een eerlijke blik op mijn sterktes, zwaktes, kansen en bedreigingen
+            </p>
+          </div>
+
+          <div class="swot-grid">
+            <div class="swot-card strengths">
+              <div class="swot-header">
+                <span class="swot-icon">📈</span>
+                <h3>Strengths</h3>
+              </div>
+              <ul>
+                <li><span class="bullet">✓</span> Inzichtelijk begrip van emoties en nuances</li>
+                <li><span class="bullet">✓</span> Zachte overtuigingskracht door empathische communicatie</li>
+                <li><span class="bullet">✓</span> Onafhankelijk denkvermogen en reflectieve aanpak</li>
+                <li><span class="bullet">✓</span> Stille vastberadenheid zonder conflict te zoeken</li>
+                <li><span class="bullet">✓</span> Authentieke aanwezigheid die vertrouwen creëert</li>
+              </ul>
+            </div>
+
+            <div class="swot-card weaknesses">
+              <div class="swot-header">
+                <span class="swot-icon">📉</span>
+                <h3>Weaknesses</h3>
+              </div>
+              <ul>
+                <li><span class="bullet">−</span> Moeilijkheden met pragmatisch denken</li>
+                <li><span class="bullet">−</span> Netwerken en zelfpromotie zijn vermoeiend</li>
+                <li><span class="bullet">−</span> Neiging om kritiek persoonlijk te nemen</li>
+                <li><span class="bullet">−</span> Intuïtieve, weinig gestructureerde werkwijze</li>
+                <li><span class="bullet">−</span> Terughoudend om voor mezelf op te komen</li>
+              </ul>
+            </div>
+
+            <div class="swot-card opportunities">
+              <div class="swot-header">
+                <span class="swot-icon">🎯</span>
+                <h3>Opportunities</h3>
+              </div>
+              <ul>
+                <li><span class="bullet">+</span> Toenemende aandacht voor ethisch design</li>
+                <li><span class="bullet">+</span> Groeiende vraag naar mensgericht design</li>
+                <li><span class="bullet">+</span> Ruimte voor creativiteit en storytelling</li>
+                <li><span class="bullet">+</span> Openheid rond mentaal welzijn en neurodiversiteit</li>
+                <li><span class="bullet">+</span> Waardering voor flexibiliteit en autonomie</li>
+              </ul>
+            </div>
+
+            <div class="swot-card threats">
+              <div class="swot-header">
+                <span class="swot-icon">⚠️</span>
+                <h3>Threats</h3>
+              </div>
+              <ul>
+                <li><span class="bullet">!</span> Commerciële druk binnen digitale sector</li>
+                <li><span class="bullet">!</span> Deadlines en winstdoelen boven ethiek</li>
+                <li><span class="bullet">!</span> Risico op overmatige aanpassing</li>
+                <li><span class="bullet">!</span> Sterk gestructureerde werkomgevingen</li>
+                <li><span class="bullet">!</span> Routinematige taken kunnen motivatie ondermijnen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Future Section -->
+      <section id="future" class="section bg-light">
+        <div class="container">
+          <div class="section-header">
+            <h2>Toekomst als Professional</h2>
+            <p class="section-subtitle">
+              Hoe ik mijn professionele toekomst voor me zie
+            </p>
+          </div>
+
+          <div class="card mb-4">
+            <h3>🏢 Werkomgeving</h3>
+            <p>
+              In mijn professionele toekomst zie ik mezelf werken in een omgeving waar menselijkheid 
+              centraal staat. Ik wil deel uitmaken van een bedrijf of team dat ruimte laat voor 
+              reflectie, dialoog en persoonlijke groei. Een bedrijfscultuur waarin fouten besproken 
+              mogen worden en waarin ethische vragen niet als lastig, maar als noodzakelijk worden gezien.
+            </p>
+          </div>
+
+          <div class="two-col-grid">
+            <div class="card-emerald">
+              <h4>👥 Focus op Mens</h4>
+              <p>
+                Ik voel me het meest aangetrokken tot functies binnen Digital Experience Design waar 
+                empathie, storytelling en gebruikerswelzijn belangrijker zijn dan pure efficiëntie of 
+                winstmaximalisatie.
+              </p>
+            </div>
+
+            <div class="card-amber">
+              <h4>🎯 Autonomie & Flexibiliteit</h4>
+              <p>
+                Autonomie en flexibiliteit zijn voor mij essentieel, net als de mogelijkheid om 
+                zelfstandig te werken zonder volledig geïsoleerd te zijn.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-highlight mt-4">
+            <h3>🧭 Mijn Doel</h3>
+            <p>
+              Ethisch gezien weet ik dat ik in mijn carrière keuzes zal moeten maken. Niet elk 
+              project zal perfect aansluiten bij mijn waarden. Mijn uitdaging zal zijn om te leren 
+              wanneer compromis mogelijk is en wanneer nee zeggen noodzakelijk wordt.
+            </p>
+            <p>
+              Mijn doel is niet om een perfecte professional te zijn, maar een integere. Iemand die 
+              blijft reflecteren, blijft twijfelen en blijft groeien. Op die manier hoop ik een 
+              carrière uit te bouwen die niet alleen professioneel succesvol is, maar ook moreel draagbaar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion Section -->
+      <section id="conclusion" class="section">
+        <div class="container text-center">
+          <div class="icon-circle mb-4">
+            📖
+          </div>
+          <h2>Conclusie</h2>
+
+          <div class="content-block">
+            <div class="card mb-4">
+              <p>
+                Deze reflectie heeft mij geholpen om mijn ethisch handelen niet alleen te benoemen, 
+                maar ook te begrijpen. Door mijn persoonlijkheid, waarden en toekomstvisie te verbinden 
+                via het model van Bateson, wordt duidelijk dat ethiek voor mij geen abstract begrip is, 
+                maar een dagelijkse praktijk die voortkomt uit wie ik ben.
+              </p>
+                        
+              <p>
+                Mijn introversie, gevoeligheid en idealisme zijn geen obstakels, maar richtingaanwijzers 
+                die mijn moreel kompas vormgeven.
+              </p>
+            </div>
+
+            <div class="card-highlight mb-4">
+              <p>
+                Als toekomstig professional binnen Digital Experience Design wil ik bewust omgaan met de 
+                impact van mijn werk op mensen en samenleving. Ik besef dat ethisch handelen niet betekent 
+                dat elke keuze perfect is, maar wel dat ze doordacht, eerlijk en mensgericht is.
+              </p>
+            </div>
+
+            <div class="card-final">
+              <p class="quote">
+                Door te blijven reflecteren, grenzen te stellen en trouw te blijven aan mijn waarden, 
+                hoop ik een professionele weg te bewandelen die niet alleen succesvol is, maar ook 
+                betekenisvol en moreel verantwoord.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container text-center">
+        <p>Ethiek: Moreel Kompas — Sam Pittois</p>
+        <p class="footer-sub">Digital Experience Design, Thomas More</p>
+        <p>Download de pdf <a href="Moreel_Kompas.pdf" download>hier</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
